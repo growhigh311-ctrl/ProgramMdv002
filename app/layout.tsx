@@ -44,6 +44,9 @@ export default function RootLayout({
       className={`${outfit.variable} ${playfair.variable} h-full antialiased dark`}
       style={{ colorScheme: 'dark' }}
     >
+      <head>
+        <meta name="google-site-verification" content="y6dTdhcQjnE1OhAO05-wDoZFwJwj_PCo0c-hDNYjve8" />
+      </head>
       <body className="min-h-full flex flex-col bg-[#050505] text-zinc-100 font-sans selection:bg-violet-500/20 selection:text-violet-300">
         <Navbar />
         <main className="flex-grow pt-20">
