@@ -1,7 +1,10 @@
+import type { Metadata } from "next";
 import { blogPosts } from "../../../lib/blogData";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Calendar, Clock, ChevronLeft } from "lucide-react";
+
+const BASE_URL = "https://mahadevreal.site";
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -11,6 +14,29 @@ export async function generateStaticParams() {
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
+  if (!post) return { title: "Post Not Found | Mahadev Book" };
+  return {
+    title: `${post.title} | Mahadev Book Blog`,
+    description: post.excerpt || `Read ${post.title} on the Mahadev Book blog.`,
+    alternates: { canonical: `${BASE_URL}/blog/${post.slug}` },
+    openGraph: {
+      title: `${post.title} | Mahadev Book Blog`,
+      description: post.excerpt || `Read ${post.title} on the Mahadev Book blog.`,
+      url: `${BASE_URL}/blog/${post.slug}`,
+      siteName: "Mahadev Book",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | Mahadev Book Blog`,
+      description: post.excerpt || `Read ${post.title} on the Mahadev Book blog.`,
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: PageProps) {

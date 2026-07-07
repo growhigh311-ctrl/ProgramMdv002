@@ -1,30 +1,62 @@
-import { MetadataRoute } from 'next';
-import { blogPosts } from '../lib/blogData';
+import { MetadataRoute } from "next";
+import { blogPosts } from "../lib/blogData";
+
+const BASE_URL = "https://mahadevreal.site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://themahadevbook.info';
+  const now = new Date();
 
-  const routes = [
-    '',
-    '/about',
-    '/blog',
-    '/mahadev-betting-app',
-    '/mahadev-book-id',
-    '/faq',
-    '/contact',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1.0 : 0.8,
-  }));
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: BASE_URL,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/blog`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/mahadev-betting-app`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/mahadev-book-id`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/faq`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/contact`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
 
   const blogRoutes = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
     priority: 0.6,
   }));
 
-  return [...routes, ...blogRoutes];
+  return [...staticRoutes, ...blogRoutes];
 }
