@@ -14,7 +14,7 @@ const stats = [
 ];
 
 const games = [
-  { title: "Cricket Betting", desc: "Live IPL,International,T20,Big League Matches with attractive odds", icon: "🏏" },
+  { title: "Cricket Gaming", desc: "Live IPL,International,T20,Big League Matches with attractive odds", icon: "🏏" },
   { title: "Football Leagues", desc: "Premier league,Champions league,League one,ISL", icon: "⚽" },
   { title: "Live Casino", desc: "Teen patti,Andar Bahar,Roulette,Poker and more live streaming", icon: "🃏" },
   { title: "Tennis Matches", desc: "Grand Slams,Ten nip Tour and WTA Tour Matches", icon: "🎾" },
@@ -31,8 +31,8 @@ const features = [
 const reviews = [
   { name: "Rahul S.", location: "Mumbai", comment: "The withdrawal was processed within 5 minutes! I have not found a better platform.", rating: 5 },
   { name: "Priya K.", location: "Delhi", comment: "I got my ID today itself. Very smooth process and great executive support.", rating: 5 },
-  { name: "Vikram M.", location: "Bangalore", comment: "I had a great experience betting on IPL. The updates and payouts were very fast.", rating: 5 },
-  { name: "Ankit T.", location: "Pune", comment: "100% genuine site. I have been using it for all my betting needs.", rating: 5 },
+  { name: "Vikram M.", location: "Bangalore", comment: "I had a great experience gaming on IPL. The updates and payouts were very fast.", rating: 5 },
+  { name: "Ankit T.", location: "Pune", comment: "100% genuine site. I have been using it for all my gaming needs.", rating: 5 },
   { name: "Suresh P.", location: "Hyderabad", comment: "Best customer care. They resolved my query over whatsapp within minutes.", rating: 5 },
   { name: "Riya N.", location: "Chennai", comment: "Mujhe bahut accha experience mila. Payout fast aur secure hai.", rating: 5 }
 ];
@@ -40,7 +40,7 @@ const reviews = [
 const trustPoints = [
   { title: "Expertise", desc: "Sports & Gaming Experts with 15+ years of successful experience", icon: Award },
   { title: "Experience", desc: "1.2M+ registered users from 2018 with over 60M plus successful withdrawals", icon: Check },
-  { title: "Authority", desc: "Top 1 online betting portal in India with awards winning excellence", icon: Shield },
+  { title: "Authority", desc: "Top 1 online gaming portal in India with awards winning excellence", icon: Shield },
   { title: "Trust", desc: "SSL encrypted with secure payment gateways and trusted by iTech labs", icon: Lock }
 ];
 
@@ -48,7 +48,7 @@ const faqs = [
   { q: "What is Mahadev Book?", a: "Mahadev Book is the brand or website referenced on this domain. Check the site's current pages and terms for the latest information." },
   { q: "How does a Mahadev Book ID work?", a: "An account ID is generally used to identify a user account. Refer to Mahadev Book's current account instructions and terms for the exact process." },
   { q: "How can I access Mahadev Book?", a: "Use the site's current official URL and verify the domain before entering any account information. Follow the access instructions published on the site." },
-  { q: "What sports are available on Mahadev Book?", a: "Available sports can change. Check the current sports or betting section on the website for the latest list and availability." },
+  { q: "What sports are available on Mahadev Book?", a: "Available sports can change. Check the current sports or gaming section on the website for the latest list and availability." },
   { q: "Does Mahadev Book provide live sports information?", a: "Check the site's current sports section for any live-event information and the terms that apply to its use." },
   { q: "How can I get help with my Mahadev Book account?", a: "Use the contact or support details published on the website. Avoid relying on unofficial accounts or third-party contacts." },
   { q: "How do I find Mahadev Book login information?", a: "Use the official domain and follow the current login or access instructions. If access fails, use the site's published support channel." },
@@ -85,7 +85,7 @@ export default function Home() {
               BET <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-violet-600">SMART.</span><br/> WIN BIG.
             </h1>
             <p className="text-zinc-400 text-lg mb-10 max-w-lg border-l-4 border-fuchsia-600 pl-6 py-2">
-              The one and only betting exchange with instant withdrawal and 60k + live events, where the odds are in your favor
+              The one and only gaming exchange with instant withdrawal and 60k + live events, where the odds are in your favor
             </p>
             <div className="flex gap-4">
               <a href={whatsappUrl} className="bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-black px-8 py-4 uppercase tracking-widest flex items-center gap-3 shadow-[6px_6px_0_0_rgba(107,33,168,0.5)] transition-all active:translate-y-1 active:shadow-[2px_2px_0_0_rgba(107,33,168,0.5)]">
@@ -120,7 +120,7 @@ export default function Home() {
           <div>
             <h2 className="text-4xl font-black mb-8 border-b-4 border-fuchsia-600 inline-block pb-2 uppercase tracking-wide">ABOUT MAHADEV</h2>
             <p className="text-zinc-400 text-lg mb-12 leading-relaxed">
-              Mahadev Book is a trusted aggregator that offers you access to a world of live betting, premium sportsbook, and high roller casino with just a tap of a button. We assure you of the best payout experience with our guaranteed instant withdrawals.
+              Mahadev Book is a trusted aggregator that offers you access to a world of live gaming, premium sportsbook, and high roller casino with just a tap of a button. We assure you of the best payout experience with our guaranteed instant withdrawals.
             </p>
             
             <h3 className="text-2xl font-black mb-6 uppercase">Our Strength</h3>
@@ -218,7 +218,7 @@ export default function Home() {
           <div className="md:col-span-1">
             <div className="font-black text-2xl tracking-tighter text-white uppercase mb-6">MAHADEV<span className="text-fuchsia-500 bg-fuchsia-500/10 px-2 ml-1 rounded">BOOK</span></div>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              India’s most trusted sports insights and fantasy analytics platform. Providing live odds, player analysis and verified betting ID since 2018.
+              India’s most trusted sports insights and fantasy analytics platform. Providing live odds, player analysis and verified gaming ID since 2018.
             </p>
           </div>
           
@@ -228,7 +228,7 @@ export default function Home() {
               <li><a href="#" className="hover:text-fuchsia-400 transition-colors">Home</a></li>
               <li><a href="#" className="hover:text-fuchsia-400 transition-colors">About Us</a></li>
               <li><a href="#" className="hover:text-fuchsia-400 transition-colors">Insights Blog</a></li>
-              <li><a href="#" className="hover:text-fuchsia-400 transition-colors">Mahadev Betting App</a></li>
+              <li><a href="#" className="hover:text-fuchsia-400 transition-colors">Mahadev Gaming App</a></li>
               <li><a href="#" className="hover:text-fuchsia-400 transition-colors">Mahadev Book ID</a></li>
               <li><a href="#" className="hover:text-fuchsia-400 transition-colors">FAQ</a></li>
               <li><a href="#" className="hover:text-fuchsia-400 transition-colors">Contact Support</a></li>
@@ -240,8 +240,8 @@ export default function Home() {
             <ul className="space-y-3 text-sm text-zinc-400">
               <li>• Gold365 Exchange</li>
               <li>• Laser247 Official</li>
-              <li>• IPL Cricket Betting ID</li>
-              <li>• Online Betting ID India</li>
+              <li>• IPL Cricket Gaming ID</li>
+              <li>• Online Gaming ID India</li>
               <li>• Mahadev Book Online Book</li>
               <li>• Mahadev Book Official</li>
             </ul>
@@ -250,7 +250,7 @@ export default function Home() {
           <div>
             <div className="border-[3px] border-fuchsia-900/50 bg-[#0c001f] p-6 shadow-[8px_8px_0_0_rgba(217,70,239,0.15)]">
               <h4 className="font-bold uppercase tracking-wide mb-4 text-center">Get Started</h4>
-              <p className="text-xs text-zinc-400 text-center mb-6">Create your secure betting profile within 2 minutes and start betting smartly.</p>
+              <p className="text-xs text-zinc-400 text-center mb-6">Create your secure gaming profile within 2 minutes and start gaming smartly.</p>
               <a href={whatsappUrl} className="block text-center bg-[#25D366] text-white font-black px-4 py-3 uppercase tracking-widest text-sm shadow-[4px_4px_0_0_rgba(37,211,102,0.4)] hover:bg-[#20bd5a] transition-colors">
                 Chat on WhatsApp
               </a>

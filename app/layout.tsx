@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     template: "%s | Mahadev Book",
   },
   description:
-    "Explore Mahadev Book information, online ID guidance, sports betting and gaming resources, account help, and frequently asked questions.",
+    "Explore Mahadev Book information, online ID guidance, sports gaming and gaming resources, account help, and frequently asked questions.",
   keywords: [
     "Mahadev Book",
     "Mahadev Book ID",
     "Mahadev Book Login",
     "Mahadev Book Register",
     "Buy Mahadev Book ID",
-    "Mahadev Betting App",
+    "Mahadev Gaming App",
     "Mahadev Cricket ID",
     "Mahadev Online",
     "Mahadev Book Official",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mahadev Book Official Website | ID & Account Information Guide",
     description:
-      "Explore Mahadev Book information, online ID guidance, sports betting and gaming resources, account help, and frequently asked questions.",
+      "Explore Mahadev Book information, online ID guidance, sports gaming and gaming resources, account help, and frequently asked questions.",
     url: BASE_URL,
     siteName: "Mahadev Book",
     locale: "en_IN",
@@ -69,14 +69,14 @@ export const metadata: Metadata = {
         url: `${BASE_URL}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Mahadev Book — India's Trusted Betting Platform",
+        alt: "Mahadev Book — India's Trusted Gaming Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mahadev Book Official Website | ID & Account Information Guide",
-    description: "Explore Mahadev Book information, online ID guidance, sports betting and gaming resources, account help, and frequently asked questions.",
+    description: "Explore Mahadev Book information, online ID guidance, sports gaming and gaming resources, account help, and frequently asked questions.",
     creator: "@mahadevbook",
     site: "@mahadevbook",
   },
@@ -123,7 +123,7 @@ export default function RootLayout({
         "@id": "https://mahadevreal.site/#webpage",
         "url": "https://mahadevreal.site/",
         "name": "Mahadev Book Official Website | ID & Account Information Guide",
-        "description": "Explore Mahadev Book information, online ID guidance, sports betting and gaming resources, account help, and frequently asked questions.",
+        "description": "Explore Mahadev Book information, online ID guidance, sports gaming and gaming resources, account help, and frequently asked questions.",
         "isPartOf": {
           "@id": "https://mahadevreal.site/#website"
         }
@@ -162,7 +162,7 @@ export default function RootLayout({
             "name": "What sports are available on Mahadev Book?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Available sports can change. Check the current sports or betting section on the website for the latest list and availability."
+              "text": "Available sports can change. Check the current sports or gaming section on the website for the latest list and availability."
             }
           },
           {
